@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Comic Reader - HY</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="title">
+        Hui Ying's Comic Reader
+    </div>
+    <div class="search-container">
+        <form id="myForm">
+            View comic #<label class="input">
+                <input id="inputField" type="text" placeholder="Enter comic #" />
+            </label>
+            <br>
+            <br>
+            <label for="numOfComicsToDisplay">Number of comics to display:</label>
+            <select name="numOfComicsToDisplay" id="numOfComicsToDisplay">
+                <option value="1">1</option>
+                <option value="3">3</option>
+                <option value="5">5</option>
+            </select>
+            <br>
+            <br>
+            <button type="button" onclick="formValidation()">Submit</button>
+        </form>
+    </div>
+    <div id="loader" style="display: none;"></div>
+    <div id="comic">
+        <div class="comic-images">
+            <img src="https://imgs.xkcd.com/comics/barrel_cropped_(1).jpg">
+            <img src="https://imgs.xkcd.com/comics/tree_cropped_(1).jpg">
+            <img src="https://imgs.xkcd.com/comics/island_color.jpg">
+        </div>
+    </div>
+    <div class="buttons">
+        <span>
+            <button id="previous" type="button">
+                < Prev</button>
+                    <button id="random" type="button">Random</button>
+                    <button id="next" type="button">Next ></button>
+        </span>
+    </div>
+    <div id="page-no">Page 1-3 of 2475</div>
+    <script src="index.js"></script>
+</body>
+
+</html>
